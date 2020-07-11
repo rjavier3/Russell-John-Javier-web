@@ -1,0 +1,144 @@
+/**global**/
+html{
+	height: 100%;
+	font-size: 62.5%;
+	font-family: arial;
+}
+body{
+	height: 100%;
+	background: url(../img/background-egg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1{
+	font-size:5rem;
+	color:white;
+}
+p{
+	font-size:1.6rem;
+}
+a{
+	text-decoration: none;
+}
+
+header{
+	height:20rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.container{
+	width: 100%;
+	margin:auto;
+}
+
+/*search box*/
+.search-box{
+	width:100%;
+	margin:auto;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+/**bubbles**/
+.bubbles-con{
+	width: 25rem;
+	margin:auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.bubbles-con div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bubbles-con > div{
+	height:7rem;
+	width:4rem;
+	border-radius:1rem;
+}
+.bubbles-con > div:active .bubble{
+	background-color: rgb(225, 225, 225, 0.6);
+	border-color:orange;
+}
+.bubbles-con > div:active p{
+	color:orange;
+}
+.bubble{
+	height: 3rem;
+	width: 3rem;
+	margin:0 auto;
+	background-color: orange;
+	margin-top:1.5rem;
+	border:3px solid white;
+	border-radius: 2.5rem;
+}
+.bubbles-con > div p{
+	font-size:1.2rem;
+	text-align: center;
+	margin-top:0.5rem;
+	color:white;
+}
+
+
+
+
+@media only screen and (min-width: 700px){
+	header{
+		height:35rem;
+	}
+	h1{
+		font-size:9rem;
+	}
+	.container{
+		width: 60rem;
+	}
+	.search-box{
+		margin-top: 5rem;
+	}
+
+	/**bubbles**/
+	.bubbles-con{
+		width: 60%;
+	}
+	.bubbles-con > div{
+		height:10rem;
+		width:5rem;
+	}
+	.bubble{
+		height: 4.3rem;
+		width: 4.3rem;
+	}
+	.bubbles-con > div p{
+		font-size:1.2rem;
+		text-align: center;
+		margin-top:1rem;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 1000px){
+	header{
+		height:25rem;
+	}
+	.container{
+		width: 70rem;
+	}
+
+	.bubbles-con{
+		width: 50%
+	}
+	.bubbles-con > div:hover .bubble{
+		background-color: rgb(225, 225, 225, 0.6);
+		border-color:orange;
+	}
+	.bubbles-con > div:hover p{
+		color:orange;
+	}
+}

@@ -1,0 +1,266 @@
+/**global**/
+html{
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+.container {
+	margin:0 auto;
+	width:100%;
+    background-color: #ffff;
+}
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color:#000;
+}
+h1,
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+}
+.button{
+    background-color:#ff6700;
+    text-align: center;
+    padding: .5rem; 
+    width:15rem;
+}
+.button a{
+    color:#ffff;
+    display: block;
+}
+.button:hover{
+    background-color:#ffff;
+}
+.button:hover a{
+    color:#ff6700;
+}
+
+
+
+/**header**/
+header{
+    padding: 1rem 0;
+}
+header > div{
+    height: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.menu-links li{
+    line-height: 5.5rem;
+    text-align: center;
+}
+.menu-links a{
+    display: block;
+}
+.show-nav{
+    max-height: 21.5rem;
+}
+.toggle-icon span{
+    width:3rem;
+    height:.4rem;
+    margin-bottom: .6rem;
+    border-radius: 10rem;
+    background-color:#3f3f3f;
+    display: block;
+}
+header i{
+    font-size: 2.5rem;
+    color:#000;
+}
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+/**main**/
+.banner{
+    background-image: url(../img/background-mountain.jpg);
+    background-size: auto 100%;
+    background-position: center;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner > div{
+    width:20rem;
+}
+.banner h1{
+    color:#ffff;
+    font-size: 5rem;
+    line-height: .8;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.intro, .content{
+    padding:3rem;
+}
+
+.content{
+    background-color: #ebebeb;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.content h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom:2rem;
+}
+.content a{
+    display: block;
+}
+.content .item img{
+    width:100%;
+}
+.content .item{
+    width: 49%;
+    padding-bottom:1rem; 
+}
+/**contact.html**/
+form{
+    width: 100%;
+}
+.full-width{
+    padding-top:.5rem;
+}
+.full-width input{
+    width: 100%;
+}
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    height: 30rem;
+}
+input[type="submit"]{
+    margin-top: 1rem;
+    background-color:#ff6700;
+    border:none;
+    color:#ffff;
+    padding: .5rem 2rem;
+    font-size: 1.6rem;
+}
+input[type="submit"]:hover{
+    background-color:#ffff;
+    color:#ff6700;
+}
+.download a{
+    color:#ff6700;
+    text-decoration: underline;
+}
+
+
+
+/**footer**/
+footer{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+footer .button-con{
+    width:100%;
+}
+footer .button{
+    margin:auto;
+}
+.follow-me{
+    font-size: 3rem;
+    color:#464646;
+    width: 40%;
+    text-align:center;
+    padding:0 3rem;
+}
+footer .bottom{
+    width: 100%;
+    background-color:#ebebeb;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+.bottom i{
+    margin:0 .3rem; 
+}
+footer i:hover{
+    color:#ff6700;
+}
+
+
+
+@media only screen and (min-width: 700px){
+    /*global*/
+    .container{
+        max-width: 96rem;
+    }
+    .button{
+        margin:auto;
+    }
+
+    /*header*/
+    .banner > div{
+        width: 50rem;
+    }
+    .logo{
+        width: 5rem;
+        height: 5rem;
+    }
+    /*nav*/
+    .toggle-icon{
+        display: none;
+    }
+    header nav{
+        max-height: 76%;
+    }
+    header,
+    .menu-links{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-links li{
+        padding: 0 5px;
+        margin:0 10px;
+    }
+    .menu-links li:hover a{
+        color:#ff6700;
+    }
+    
+    /*main*/
+    .intro{
+        padding:7rem 10rem;
+    }
+}
+
+@media only screen and (min-width: 770px){
+    .banner{
+        background-size:100% auto;
+    }
+}
+
+
+
+
+/*************Helper classes**********/
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
