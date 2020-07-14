@@ -30,7 +30,7 @@ h1{
     font-size: 3rem;
 }
 .image-con{
-    width: 80rem;
+    width: 85rem;
     height: 60rem;
     display: flex;
     justify-content: center;
@@ -64,10 +64,10 @@ p{
     height:100%;
     line-height: 4rem;
 }
-.button:hover{
+.button:active{
     background-color:#ffff;
 }
-.button:hover a{
+.button:active a{
     color:#ff6700;
 }
 
