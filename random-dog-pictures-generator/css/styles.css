@@ -24,7 +24,7 @@ a{
 
 /****************body*****************/
 header{
-    padding: 2rem;
+    padding: 2rem 0;
 }
 h1{
     font-size: 3rem;
@@ -34,25 +34,29 @@ h1{
     height: 60rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 img{
     max-width:100%;
     max-height: 100%;
-    margin: auto;
 }
 .action-con{
-    padding: 2rem 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 .action-con p{
     padding-bottom: 1rem;
+}
+p{
+    padding:.5rem 0;
 }
 /**buttons**/
 .button{
     background-color:#ff6700;
     text-align: center;
     height: 4rem;
-    width:30%;
+    width:47%;
 }
 .button a{
     color:#ffff;
