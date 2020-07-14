@@ -1,0 +1,84 @@
+html{
+	font-size: 62.5%;
+	line-height: 1.5;
+}
+body {
+	font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+	margin:0 auto;
+	width:96rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    background-color: #ebebeb;
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bold;
+}
+a{
+    text-decoration:none;
+}
+
+/****************body*****************/
+header{
+    padding: 2rem;
+}
+h1{
+    font-size: 3rem;
+}
+.image-con{
+    width: 80rem;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width:100%;
+    max-height: 100%;
+    margin: auto;
+}
+.action-con{
+    padding: 2rem 0;
+}
+.action-con p{
+    padding-bottom: 1rem;
+}
+/**buttons**/
+.button{
+    background-color:#ff6700;
+    text-align: center;
+    height: 4rem;
+    width:30%;
+}
+.button a{
+    color:#ffff;
+    display: block;
+    height:100%;
+    line-height: 4rem;
+}
+.button:hover{
+    background-color:#ffff;
+}
+.button:hover a{
+    color:#ff6700;
+}
+
+
+
+
+
+/**Helper classes**/
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

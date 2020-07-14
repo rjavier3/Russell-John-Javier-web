@@ -25,12 +25,13 @@ h2{
 .button{
     background-color:#ff6700;
     text-align: center;
-    padding: .5rem; 
-    width:15rem;
+    width:16rem;
+    height:3.5rem;
 }
 .button a{
     color:#ffff;
     display: block;
+    line-height: 3.5rem;
 }
 .button:hover{
     background-color:#ffff;
