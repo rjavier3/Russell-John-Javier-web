@@ -8,7 +8,7 @@ body {
 }
 .container {
 	margin:0 auto;
-	width:96rem;
+	width:100%;
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
@@ -30,8 +30,8 @@ h1{
     font-size: 3rem;
 }
 .image-con{
-    width: 85rem;
-    height: 60rem;
+    width: 95vw;
+    height: 34rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -72,6 +72,9 @@ p{
 }
 
 
+@media only screen and (min-width:768px){
+
+}
 
 
 
