@@ -92,6 +92,7 @@ header i{
     background-size: auto 100%;
     background-position: center;
     height: 95vh;
+    max-height: 72rem;
     display: flex;
     justify-content: center;
     align-items: center;
