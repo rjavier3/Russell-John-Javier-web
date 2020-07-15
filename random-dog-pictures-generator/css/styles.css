@@ -72,8 +72,21 @@ p{
 }
 
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:700px){
+    .image-con{
+        height:60rem;
+        background-color:orange;
+    }
+}
 
+@media only screen and (min-width: 960px){
+    .container{
+        width:96rem;
+    }
+    .image-con{
+        width:85rem;
+        height:60rem;
+    }
 }
 
 
