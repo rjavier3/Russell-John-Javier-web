@@ -197,6 +197,9 @@ footer .bottom{
     justify-content: space-between;
     padding: .5rem 1rem;
 }
+footer .bottom p{
+    
+}
 .bottom i{
     margin:0 .3rem; 
 }
