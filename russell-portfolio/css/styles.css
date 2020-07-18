@@ -88,7 +88,7 @@ header i{
 
 /**main**/
 .banner{
-    background-image: url(../img/background-mountain.jpg);
+    background-image: url(../img/background-mountain.webp);
     background-size: auto 100%;
     background-position: center;
     height: 95vh;
@@ -198,7 +198,7 @@ footer .bottom{
     padding: .5rem 1rem;
 }
 footer .bottom p{
-    
+
 }
 .bottom i{
     margin:0 .3rem; 
