@@ -1,26 +1,41 @@
 /**global**/
 html{
-	font-size: 62.5%;
+    font-size: 62.5%;
+    
+    --bg:#ffffff;
+    --bg-pannel:#ebebeb;
+    --light-texts:#ffffff;
+    --dark-texts:#000000;
+}
+html[data-theme="dark"]{   
+    --bg:#212121;
+    --bg-pannel:#303030;
+    --light-texts:#000000;
+    --dark-texts:#ffffff;
 }
 body {
 	font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    background-color: var(--bg);
 }
 .container {
 	margin:0 auto;
-	width:100%;
-    background-color: #ffff;
+    width:100%;
 }
 a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color:#000;
+    color:var(--dark-texts);
 }
 h1,
 h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
+    color:var(--dark-texts);
+}
+p, label{
+    color:var(--dark-texts);
 }
 .button{
     background-color:#ff6700;
@@ -29,12 +44,12 @@ h2{
     height:3.5rem;
 }
 .button a{
-    color:#ffff;
+    color:var(--light-texts);
     display: block;
     line-height: 3.5rem;
 }
 .button:hover{
-    background-color:#ffff;
+    background-color:var(--bg);
 }
 .button:hover a{
     color:#ff6700;
@@ -78,7 +93,7 @@ header nav{
 }
 header i{
     font-size: 2.5rem;
-    color:#000;
+    color:var(--dark-texts);
 }
 .logo{
     width: 4rem;
@@ -101,18 +116,19 @@ header i{
     width:20rem;
 }
 .banner h1{
-    color:#ffff;
+    color:#ffffff;
     font-size: 5rem;
     line-height: .8;
     text-transform: uppercase;
     margin-top: 1rem;
 }
+
 .intro, .content{
     padding:3rem;
 }
 
 .content{
-    background-color: #ebebeb;
+    background-color: var(--bg-pannel);
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -151,12 +167,12 @@ input[type="submit"]{
     margin-top: 1rem;
     background-color:#ff6700;
     border:none;
-    color:#ffff;
+    color:var(--light-texts);
     padding: .5rem 2rem;
     font-size: 1.6rem;
 }
 input[type="submit"]:hover{
-    background-color:#ffff;
+    background-color:var(--light-texts);
     color:#ff6700;
 }
 .download a{
@@ -192,13 +208,10 @@ footer .button{
 }
 footer .bottom{
     width: 100%;
-    background-color:#ebebeb;
+    background-color:var(--bg-pannel);
     display: flex;
     justify-content: space-between;
     padding: .5rem 1rem;
-}
-footer .bottom p{
-
 }
 .bottom i{
     margin:0 .3rem; 
