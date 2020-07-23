@@ -216,7 +216,7 @@ footer .bottom{
 .bottom i{
     margin:0 .3rem; 
 }
-footer i:hover{
+footer i:active{
     color:#ff6700;
 }
 
