@@ -57,7 +57,7 @@ p, label{
 
 
 
-/**header**/
+/*******************header*****************/
 header{
     padding: 1rem 0;
 }
@@ -100,8 +100,47 @@ header i{
     height: 4rem;
 }
 
+/**theme toggle**/
+.theme-switch-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:5.5rem;
+}
+.theme-switch {
+	cursor: pointer;
+	text-indent: -999rem;
+	width: 5rem;
+	height: 2.5rem;
+	background: grey;
+	display: block;
+	border-radius: 2.5rem;
+	position: relative;
+}
+.theme-switch:after {
+	content: '';
+	position: absolute;
+	top: 0.125rem;
+	left: 0.125rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	background: #fff;
+	border-radius: 2.25rem;
+	transition: 0.3s;
+}
+.theme-checkbox:checked + label {
+	background: #ff6700;
+}
+.theme-checkbox:checked + label:after {
+	left: calc(100% - 0.125rem);
+	transform: translateX(-100%);
+}
+.theme-checkbox:active:after {
+	width: 3.25rem;
+}
 
-/**main**/
+
+/************************main*******************/
 .banner{
     background-image: url(../img/background-mountain.webp);
     background-size: auto 100%;
@@ -151,8 +190,8 @@ header i{
 
 /************************contact.html********************/
 .banner.contact-banner{
-    background-size: 100% auto;
-    height: 35vh;
+    background-size:auto 100%;
+    height: 50vh;
 }
 form{
     width: 100%;
