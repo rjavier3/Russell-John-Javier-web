@@ -148,7 +148,12 @@ header i{
     width: 49%;
     padding-bottom:1rem; 
 }
+
 /************************contact.html********************/
+.banner.contact-banner{
+    background-size: 100% auto;
+    height: 25vh;
+}
 form{
     width: 100%;
 }
