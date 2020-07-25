@@ -264,7 +264,12 @@ footer i:active{
     color:#ff6700;
 }
 
-
+@media only screen and (min-width: 580px){
+    /* contact page */
+    .banner.contact-banner{
+        background-size:100% auto;
+    }
+}
 
 @media only screen and (min-width: 700px){
     /*global*/
@@ -306,12 +311,6 @@ footer i:active{
     /*main*/
     .intro{
         padding:7rem 10rem;
-    }
-}
-
-@media only screen and (min-width: 770px){
-    .banner{
-        background-size:100% auto;
     }
 }
 
