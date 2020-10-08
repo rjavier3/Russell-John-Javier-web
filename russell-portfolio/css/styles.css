@@ -58,10 +58,19 @@ p, label{
 
 
 /*******************header*****************/
-header{
-    padding: 1rem 0;
+nav {
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:.3rem 0;
+    background-color:#c2c2c2;
+    z-index: 100000;
 }
-header > div{
+/* header > div{
     height: 100%;
     padding: 0 1.5rem;
     display: flex;
@@ -82,7 +91,7 @@ header nav{
 }
 .show-nav{
     max-height: 21.5rem;
-}
+} */
 .toggle-icon span{
     width:3rem;
     height:.4rem;
@@ -91,14 +100,31 @@ header nav{
     background-color:#3f3f3f;
     display: block;
 }
-header i{
-    font-size: 2.5rem;
-    color:var(--dark-texts);
-}
 .logo{
     width: 4rem;
     height: 4rem;
 }
+
+nav a{
+    margin:0 1rem;
+}
+nav ul{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.menu-links li{
+    position: relative;
+}
+.menu-links li a{
+    position: relative;
+    margin:0 1.5rem;
+    letter-spacing: .2rem;
+}
+
+
+
 
 /**theme toggle**/
 .theme-switch-container{
@@ -141,7 +167,7 @@ header i{
 
 
 /************************main*******************/
-.banner{
+/* .banner{
     background-image: url(../img/background-mountain.webp);
     background-size: auto 100%;
     background-position: center;
@@ -150,19 +176,40 @@ header i{
     display: flex;
     justify-content: center;
     align-items: center;
+}*/
+.banner{
+    background-image:url(../img/background-mountain.webp);
+    background-size:cover;
+    position: relative;
+    width:100%;
+    height:80rem;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .banner > div{
-    width:20rem;
+    width:22rem;
 }
 .banner h1{
     color:#ffffff;
     font-size: 5rem;
     line-height: .8;
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin: 2rem 0;
+}
+.banner p{
+    color:#ffffff;
+    padding:.5rem;
+    font-weight:bolder;
 }
 
-.intro, .content{
+
+
+
+
+
+.about, .content{
     padding:3rem;
 }
 
@@ -185,7 +232,7 @@ header i{
 }
 .content .item{
     width: 49%;
-    padding-bottom:1rem; 
+    padding-bottom:2rem; 
 }
 
 /************************contact.html********************/
@@ -274,7 +321,7 @@ footer i:active{
 @media only screen and (min-width: 700px){
     /*global*/
     .container{
-        max-width: 96rem;
+        max-width: 100%;
     }
     .button{
         margin:auto;
@@ -309,9 +356,17 @@ footer i:active{
     }
     
     /*main*/
-    .intro{
+    /* .banner > div{
+        display:flex;
+        align-items: center;
+    } */
+    .banner p{
+        padding-left:15rem;
+    }
+    .about{
         padding:7rem 10rem;
     }
+
 }
 
 
