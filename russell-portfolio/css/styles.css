@@ -70,28 +70,6 @@ nav {
     background-color:#c2c2c2;
     z-index: 100000;
 }
-/* header > div{
-    height: 100%;
-    padding: 0 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-}
-.menu-links li{
-    line-height: 5.5rem;
-    text-align: center;
-}
-.menu-links a{
-    display: block;
-}
-.show-nav{
-    max-height: 21.5rem;
-} */
 .toggle-icon span{
     width:3rem;
     height:.4rem;
@@ -123,47 +101,6 @@ nav ul{
     letter-spacing: .2rem;
 }
 
-
-
-
-/**theme toggle**/
-.theme-switch-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:5.5rem;
-}
-.theme-switch {
-	cursor: pointer;
-	text-indent: -999rem;
-	width: 5rem;
-	height: 2.5rem;
-	background: grey;
-	display: block;
-	border-radius: 2.5rem;
-	position: relative;
-}
-.theme-switch:after {
-	content: '';
-	position: absolute;
-	top: 0.125rem;
-	left: 0.125rem;
-	width: 2.25rem;
-	height: 2.25rem;
-	background: #fff;
-	border-radius: 2.25rem;
-	transition: 0.3s;
-}
-.theme-checkbox:checked + label {
-	background: #ff6700;
-}
-.theme-checkbox:checked + label:after {
-	left: calc(100% - 0.125rem);
-	transform: translateX(-100%);
-}
-.theme-checkbox:active:after {
-	width: 3.25rem;
-}
 
 
 /************************main*******************/
@@ -207,33 +144,6 @@ nav ul{
 
 
 
-
-
-.about, .content{
-    padding:3rem;
-}
-
-.content{
-    background-color: var(--bg-pannel);
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-}
-.content h2{
-    width: 100%;
-    text-align: center;
-    padding-bottom:2rem;
-}
-.content a{
-    display: block;
-}
-.content .item img{
-    width:100%;
-}
-.content .item{
-    width: 49%;
-    padding-bottom:2rem; 
-}
 
 /************************contact.html********************/
 .banner.contact-banner{
