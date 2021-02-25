@@ -1,0 +1,35 @@
+html{
+	font-size: 62.5%;
+	line-height: 1.5;
+    height: 100%;
+}
+body {
+	font-size: 1.6rem;
+    font-family: sans-serif;
+    background: #faf4f1;
+    height: inherit;
+}
+.container {
+	width:100%;
+    height: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.content{
+    width: 40rem;
+    height: 10rem;
+    background: #000000;
+    color:#faf4f1;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+a{
+    text-decoration:none;
+    color:#ff6700;
+}
+a:hover{
+    color:#FFC8A3;
+}
